@@ -1,0 +1,16 @@
+{% load static %}
+{% include 'parties/header.html' %}
+{% include 'parties/nav.html' %}
+<div class="container-fluid">
+    <div class="col-md-8 m-auto border">
+        <h1 class="my-5 text-center">Please Select your Âge</h1>
+	    <div class="form-group text-center">
+		    <input type="range" min="18" max="100" value="59" class="form-control slider" id="myRange" name="age"><br><br>
+		<span id="age-value" style="font-size: 5rem">59</span>
+	    </div>
+        <p class="text-center">
+            <a href="{% url "symptomes" %}" class="ui primary button my-5">Next</a>
+        </p>
+    </div>
+</div>
+{% include 'parties/footer.html' %}

@@ -1,0 +1,31 @@
+{% load static %}
+{% include 'parties/header.html' %}
+{% include 'parties/nav.html' %}
+<div class="container-fluid">
+        <div class="col-md-8 m-auto border">
+            <h1 class="my-5 text-center">Please Select your gender</h1>
+            <div class="row">
+                <div class="col-md-6 my-5 text-right">
+                    <input type="radio" id="femele" name="gender" value="male">
+                    <label for="femele">
+                            <h3 class="header my-5">
+                                <img src="{% static 'godoctor/images/photo_2020-08-13_21-01-11.jpg' %}">
+                            </h3></label><br>
+                </div>
+                <div class="col-md-6 my-5">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">
+                        <h3 class="header my-5">
+                            <img src="{% static 'godoctor/images/photo_2020-08-13_21-00-59.jpg' %}">
+                        </h3></label><br>
+                </div>
+            </div>
+            <p class="text-center">
+                <a href="{% url "age" %}" class="ui primary button my-5">Next</a>
+            </p>
+        </div>
+    <h1 class="text-center">
+        Genre
+    </h1>
+</div>
+{% include 'parties/footer.html' %}

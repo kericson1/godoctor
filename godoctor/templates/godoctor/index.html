@@ -1,0 +1,22 @@
+{% load static %}
+{% include 'parties/header.html' %}
+{% include 'parties/nav.html' %}
+ <div class="col-md-8 m-auto">
+    <div class="row">
+        <div class="col-md-6 mt-md-5">
+            <h3 class="header mt-5 my-5">Welcome to Go Doctor</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consectetur consequuntur cumque dignissimos exercitationem labore laboriosam magnam quasi quia quo repellat, repellendus, velit. Aperiam eum incidunt labore repudiandae temporibus.
+            </p>
+            <p class="text-center">
+                <a href="{% url "genre" %}" class="ui primary button my-5">Next</a>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'godoctor/images/garcon-porter-science-robe_1308-37214.jpg' %}" alt="" width="250">
+
+        </div>
+
+    </div>
+  </div>
+{% include 'parties/footer.html' %}
